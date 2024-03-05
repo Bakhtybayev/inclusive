@@ -1,0 +1,23 @@
+<table class="items mt" style="width: 99%">
+  <thead>
+    <tr>
+      <th>Файл</th>
+      <th>Тип файла</th>
+      <th class="w-1"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="fs-md">{{ first_name }}</td>
+      <td class="fs-md">{{ 'PDF' }}</td>
+      <td>
+        <p-button
+          label="Скачать"
+          type="submit"
+          [text]="true"
+          styleClass="w-full fs-md p-button-text"
+        ></p-button>
+      </td>
+    </tr>
+  </tbody>
+</table>

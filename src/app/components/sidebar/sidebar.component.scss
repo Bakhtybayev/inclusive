@@ -1,0 +1,31 @@
+:host {
+  width: 15%;
+  height: calc(100vh - 48px);
+  ::ng-deep {
+    .panel {
+      //   background-color: #46494dd7;
+      background-color: var(--surface-700);
+      height: 100%;
+      border: none;
+      border-radius: 0px;
+      //   margin-top: -2px;
+    }
+  }
+
+  //   .labels {
+  //     padding: 10px;
+  //   }
+
+  .word,
+  .pdf {
+    color: white;
+    padding: 10px;
+  }
+
+  .word:hover,
+  .pdf:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+}

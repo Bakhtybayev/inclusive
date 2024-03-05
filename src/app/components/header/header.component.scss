@@ -1,0 +1,24 @@
+:host {
+  .header-content {
+    height: 48px;
+    padding: 0 1rem;
+    background-color: var(--surface-800);
+    color: white;
+  }
+
+  .header-title {
+    z-index: 1;
+    color: var(--ion-text-color);
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 1rem;
+  }
+
+  .align-items-center {
+    display: flex;
+    align-items: center;
+  }
+}
