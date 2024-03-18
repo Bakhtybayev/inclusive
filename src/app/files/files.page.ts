@@ -22,6 +22,9 @@ export class FilesPage implements OnInit {
   four_file: string = '';
   four_name: string =
     'Инклюзивті және арнайы білім беру жағдайында ерекше білім беру қажеттіліктері бар балаларды  мектепке дейінгі ұйымдарда оқыту және тәрбиелеуді ұйымдастыру';
+  five_file: string = '';
+  five_name: string =
+    'БАҒДАРЛАМА, Зияты зақымдалған балаларды оқыту мен тәрбиелеуді';
 
   ngOnInit(): void {
     fetch('../../assets/files/бағдарлама екі тілде.pdf').then((res) => {
@@ -41,6 +44,11 @@ export class FilesPage implements OnInit {
       '../../assets/files/Инклюзивті және арнайы білім беру жағдайында ерекше білім беру қажеттіліктері бар балаларды  мектепке дейінгі ұйымдарда оқыту және тәрбиелеуді ұйымдастыру.pdf'
     ).then((res) => {
       this.four_file = res.url;
+    });
+    fetch(
+      '../../assets/files/БАҒДАРЛАМА, Зияты зақымдалған балаларды оқыту мен тәрбиелеуді.pdf'
+    ).then((res) => {
+      this.five_file = res.url;
     });
   }
 }
