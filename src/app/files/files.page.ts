@@ -25,6 +25,10 @@ export class FilesPage implements OnInit {
   five_file: string = '';
   five_name: string =
     'БАҒДАРЛАМА, Зияты зақымдалған балаларды оқыту мен тәрбиелеуді';
+  six_file: string = '';
+  six_name: string = 'прогр.курсов ПК 3';
+  seven_file: string = '';
+  seven_name: string = 'UDL ОП';
 
   ngOnInit(): void {
     fetch('../../assets/files/бағдарлама екі тілде.pdf').then((res) => {
@@ -49,6 +53,12 @@ export class FilesPage implements OnInit {
       '../../assets/files/БАҒДАРЛАМА, Зияты зақымдалған балаларды оқыту мен тәрбиелеуді.pdf'
     ).then((res) => {
       this.five_file = res.url;
+    });
+    fetch('../../assets/files/прогр.курсов ПК 3 .docx').then((res) => {
+      this.six_file = res.url;
+    });
+    fetch('../../assets/files/UDL ОП.docx').then((res) => {
+      this.seven_file = res.url;
     });
   }
 }
